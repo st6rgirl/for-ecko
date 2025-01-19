@@ -13,19 +13,19 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #bc1b1b;
-    background-size: 40px 40px;
 }
 
 .wrapper {
     position: relative;
     width: 600px;
     height: 400px;
-    background: #fff;
+    background: #fffcf4;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding-top: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +80,7 @@ button:nth-child(2) {
 }
 
 button:hover {
-    background: #f9e4e4;
+    background: #fffcf4;
     color: #bc1b1b;
 }
 
