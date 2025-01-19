@@ -1,4 +1,4 @@
-@import url('https://fonts/googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,12 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fffcf4;
+    background: linear-gradient(135deg, #fffcf4 25%, #f9e4e4 25%, #f9e4e4 50%, #fffcf4 50%, #fffcf4 75%, #f9e4e4 75%);
+    background-size: 40px 40px;
 }
 
 .wrapper {
@@ -25,6 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 i {
@@ -45,6 +47,7 @@ h2 {
     font-size: 3em;
     color: #bc1b1b;
     margin: 15px 0;
+    text-align: center;
 }
 
 .btn-group {
@@ -56,7 +59,7 @@ h2 {
 }
 
 button {
-    position: absolute;
+    position: relative;
     width: 150px;
     height: inherit;
     font-size: 1.2em;
@@ -66,15 +69,22 @@ button {
     border: 2px solid #bc1b1b;
     outline: none;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-}
-
-button:nth-child(1){
-    margin-left: -200px;
     background: #bc1b1b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
-button:nth-child(2){
-    margin-right: -200px;
+button:nth-child(2) {
+    background: transparent;
     color: #bc1b1b;
+}
+
+button:hover {
+    background: #f9e4e4;
+    color: #bc1b1b;
+}
+
+button:nth-child(2):hover {
+    background: #bc1b1b;
+    color: #fffcf4;
 }
