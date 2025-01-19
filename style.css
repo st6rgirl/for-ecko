@@ -25,11 +25,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for pop */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 i {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 7.5em;
     color: #9a0b0e;
     border: 5px solid transparent;
@@ -37,10 +40,7 @@ i {
     border-radius: 50%;
     width: 1.3em;
     height: 1.3em;
-    text-align: center;
-    line-height: 1.3em;
-    margin-bottom: 20px; /* Adjust spacing from top */
-    vertical-align: middle;
+    margin-bottom: 20px;
 }
 
 h2 {
