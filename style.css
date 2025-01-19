@@ -12,40 +12,40 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #bc1b1b;
+    background: #bc1b1b; /* Red background */
 }
 
 .wrapper {
     position: relative;
     width: 600px;
     height: 400px;
-    background: #fffcf4;
+    background: #fffcf4; /* Light beige background */
     border-radius: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for pop */
 }
 
 i {
     display: inline-block;
     font-size: 7.5em;
-    color: #bc1b1b;
+    color: #bc1b1b; /* Red heart */
     border: 5px solid transparent;
-    outline: 5px solid #bc1b1b;
+    outline: 5px solid #bc1b1b; /* Red outline for heart */
     border-radius: 50%;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.3em;
+    height: 1.3em;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 1.3em;
+    margin-bottom: 20px; /* Adjust spacing from top */
     vertical-align: middle;
 }
 
 h2 {
     font-size: 3em;
-    color: #bc1b1b;
+    color: #bc1b1b; /* Red text */
     margin: 15px 0;
     text-align: center;
 }
@@ -59,32 +59,23 @@ h2 {
 }
 
 button {
-    position: relative;
+    position: absolute;
     width: 150px;
-    height: inherit;
+    height: 40px;
     font-size: 1.2em;
-    color: #fffcf4;
+    color: #fffcf4; /* Light text color */
     font-weight: 600;
     border-radius: 30px;
-    border: 2px solid #bc1b1b;
+    border: 2px solid #bc1b1b; /* Red border */
+    background-color: #bc1b1b; /* Distinct red background for visibility */
     outline: none;
     cursor: pointer;
-    background: #bc1b1b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to make it pop */
+    z-index: 10; /* Ensure it’s on top of other elements */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth hover animation */
 }
 
-button:nth-child(2) {
-    background: transparent;
-    color: #bc1b1b;
-}
-
-button:hover {
-    background: #fffcf4;
-    color: #bc1b1b;
-}
-
-button:nth-child(2):hover {
-    background: #bc1b1b;
-    color: #fffcf4;
+button.no-btn {
+    background-color: #f9e4e4; /* Light beige for 'No' button */
+    color: #bc1b1b; /* Red text for contrast */
 }
