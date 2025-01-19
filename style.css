@@ -12,14 +12,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #bc1b1b; /* Red background */
+    background: #9a0b0e;
 }
 
 .wrapper {
     position: relative;
     width: 600px;
     height: 400px;
-    background: #fffcf4; /* Light beige background */
+    background: #f2e3e4;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -31,9 +31,9 @@ body {
 i {
     display: inline-block;
     font-size: 7.5em;
-    color: #bc1b1b; /* Red heart */
+    color: #9a0b0e;
     border: 5px solid transparent;
-    outline: 5px solid #bc1b1b; /* Red outline for heart */
+    outline: 5px solid #9a0b0e;
     border-radius: 50%;
     width: 1.3em;
     height: 1.3em;
@@ -45,7 +45,7 @@ i {
 
 h2 {
     font-size: 3em;
-    color: #bc1b1b; /* Red text */
+    color: #9a0b0e;
     margin: 15px 0;
     text-align: center;
 }
@@ -61,21 +61,28 @@ h2 {
 button {
     position: absolute;
     width: 150px;
-    height: 40px;
+    height: inherit;
     font-size: 1.2em;
-    color: #fffcf4; /* Light text color */
+    color: #f2e3e4;
     font-weight: 600;
     border-radius: 30px;
-    border: 2px solid #bc1b1b; /* Red border */
-    background-color: #bc1b1b; /* Distinct red background for visibility */
+    border: 2px solid #9a0b0e;
     outline: none;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to make it pop */
-    z-index: 10; /* Ensure it’s on top of other elements */
-    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth hover animation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #9a0b0e;
+}
+
+button:nth-child(2) {
+    margin-right: -200px;
+    background: #9a0b0e;
+}
+    
 button.no-btn {
-    background-color: #f9e4e4; /* Light beige for 'No' button */
-    color: #bc1b1b; /* Red text for contrast */
+    background-color: #f2e3e4;
+    color: #9a0b0e;
 }
