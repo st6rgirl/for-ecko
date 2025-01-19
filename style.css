@@ -30,6 +30,9 @@ body{
 i {
     font-size: 7.5em;
     color: #ffd7e3;
+    border: 5px solid transparent;
+    outline: 3px solid #ffd7e3;
+    border-radius: 50%;
 }
 
 h2 {
